@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f2027;
+    color: white;
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://imgs.search.brave.com/ud4oOQk01RWG6pov23lvsd5b12U34WsOH5L9SQ5Zwls/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9taXIt/czMtY2RuLWNmLmJl/aGFuY2UubmV0L3By/b2plY3RzLzQwNC80/OWM3NzcyMjg0ODY4/NjMuWTNKdmNDd3hO/akUyTERFeU5qUXNN/Q3d3LnBuZw")
+    no-repeat center center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+}
+
+.hero-content p {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #00c6ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0072ff;
+}
+
+/* SECTION */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #00c6ff;
+}
+
+/* DARK SECTION */
+.dark {
+    background: #1c1c1c;
+}
+
+/* ABOUT */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-container img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* EDUCATION CARD */
+.card {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* PROJECTS */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #2c2c2c;
+    width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+}
+
+.project-card p {
+    padding: 0 10px 15px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* CONTACT */
+#contact p {
+    margin: 10px 0;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+}
